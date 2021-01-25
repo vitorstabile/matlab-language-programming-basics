@@ -1,0 +1,9 @@
+function f = equil2(x)
+f = zeros(2,1);
+ca0=1;
+k1 = 2.5;
+k2 = 0.1;
+x1 = x(1);
+x2 = x(2);
+f(1,1) = k1*((ca0-x1*ca0-x2*ca0)^2)-((x1*ca0))/2;
+f(2,1) = k2*(ca0-x1*ca0-x2*ca0)-((2*x2*ca0)^2);
